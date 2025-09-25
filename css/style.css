@@ -1,0 +1,272 @@
+/* The sections will be arranged accordingly in the near future 
+(there will be a "X" in this if it is done): ( / ) */
+/* 1 --> LOGO */
+/* 2 --> SITE HEADER */
+/* 3 --> NAVS */
+/* 4 --> HERO IMAGE */
+/* 5 --> LEFT SIDE NAV BARS */
+/* 6 --> CAROUSEL */
+/* 7 --> BOOODYYY */
+/* 8 --> UNUSED CSS THAT I DON'T WANT TO DISCARD */
+
+
+
+/* 1 --> LOGO */
+/* Logo styling */
+.logo-area {
+  margin-bottom: 10px; /* space between logo and nav */
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(249, 249, 249); /* or white if you have a dark background */
+}
+.size {
+  font-size: x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer-size {
+  font-size: small;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/* 2 --> SITE HEADER */
+/* Header wrapper */
+.site-header {
+  text-align: center;
+  padding-top: 20px;
+  background-color: #e985fd; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5); /* subtle shadow under header */
+}
+
+
+
+/* 3 --> NAVS */
+/* Nav styling */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.main-nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  transition: color 0.2s ease;
+}
+.main-nav b {
+  font-size: medium;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-nav a:hover {
+  color: rgb(0, 0, 0); 
+}
+
+
+/* 4 --> HERO IMAGE */
+/* for the omori cover */
+.omori-img {
+  width: 100%;
+  height: auto; 
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* --- Layout containers --- */
+/* --- OMORI INSPIRED --- */
+/* --- just find out you can combine 2 class, 
+try container header-inner --- */
+.container-custom {
+  width: min(1100px, 94%);
+  margin: 0 auto;
+}
+.header-inner {
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.photo-container {
+  display: flex; /* changes from a normal blovck layout, type shi */
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically if you give it a height */
+  margin: 20px auto;       /* add spacing and center the container itself */
+}
+.photo-container img {
+  width: 70%;   /* smaller than full width, adjust as you like */
+  max-width: 500px; /* keeps it from getting too large on big screens */
+  height: auto;
+  display: block; /* removes tiny inline gaps */
+}
+.photo-background {
+  width: 600px;      /* crop box width */
+  height: 450px;     /* crop box height */
+  overflow: hidden;  /* hides the rest of the image */
+  margin: 0 auto;    /* centers horizontally */
+}
+.photo-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* fills the box, cropping if necessary */
+  object-position: center; /* centers the crop */
+}
+
+
+
+/* 5 --> LEFT SIDE NAV BARS */
+/*scroll*/
+.scrollspy-example-2 {
+  position: relative;
+  height: 500px;      
+  overflow-y: auto;   /* allow vertical scroll */
+}
+/*the side nav bar*/
+.side-nav:hover {
+  color: rgb(120, 6, 227); 
+}
+
+
+
+
+/* 6 --> CAROUSEL */
+/*maps*/
+/* Custom caption styling for carousel */
+.custom-caption {
+  background: rgba(0, 0, 0, 0.6);   /* semi-transparent black */
+  border-radius: 15px;              /* rounded corners */
+  padding: 10px 15px;
+  display: inline-block;            /* box wraps tightly around text */
+}
+
+.custom-caption h5, 
+.custom-caption p {
+  color: #fff;                      /* white text */
+  margin: 0;                        /* remove default spacing */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* extra readability */
+}
+
+
+
+/* 7 --> BOOODYYY */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;       /* body fills full screen */
+  min-height: 100vh;  /* at least the full viewport height */
+  margin: 0;          /* remove browser default margin */
+  background: radial-gradient(circle, #fbc2eb, #a6c1ee);
+  background-attachment: fixed; /* keeps it pinned even on scroll */
+  background-size: cover;       /* makes gradient stretch full */
+}
+/* breakpoints from bootstrap */
+/* mobile phones to laptops */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Responsive changes */
+@media (max-width: 575.98px) {
+  body {
+    background: radial-gradient(circle, #fbc2eb, #a6c1ee); /* phones */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background: radial-gradient(circle, #fbc2eb, #a6c1ee); /* tablets */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: radial-gradient(circle, #fbc2eb, #a6c1ee); /* laptops */
+  }
+}
+@media (max-width: 1199.98px) {
+  body {
+    background: radial-gradient(circle, #fbc2eb, #a6c1ee); /* desktops */
+
+  } 
+}
+
+@media (max-width: 1399.98px) { 
+  body {
+    background: radial-gradient(circle, #fbc2eb, #a6c1ee); /* larger desktops */
+
+  }
+}
+
+
+
+
+
+/* 8 --> UNUSED CSS THAT I DON'T WANT TO DISCARD */
+
+/* --- 
+.omori-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: url('images/omori web.png') no-repeat center center;
+  background-size: cover;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+/* cant be used, ai generated */ /*
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url("images/headspace2.png") no-repeat center center / cover;
+  z-index: -1; } /* behind everything */
+
+/* wasnt used, i discarded the idea but might be used somehow */
+/*.blur-background {
+  /* background: url("images/your-photo.jpg") no-repeat center center/cover; */
+  /*height: 100vh; /* full screen */
+  /*filter: blur(5px); } /* blur effect */ 
+
+/* hope these works */
+/* unfortunately cant use this */
+/*.background-img{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+.moving-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;  /* keeps image scaled */
+  /*animation: scroll-bg 20s linear infinite;
+}
+
+@keyframes scroll-bg {
+  from { background-position: 0 0; }
+  to   { background-position: -100% 0; }
+}
+*/
+
+/* my close button which was modified a lot cuz im not getting the result i want */
+/* update: my button got removed because its not practical enough and it only works on modal */
+/*.my-button {
+  display: block;
+ 
+  margin-left: auto;   /* pushes it to the right */ 
+  /*margin-right: 10px;  /* optional spacing */
+  /*color: #c623e6;   
+}
+
+/* made it b since a isn't working */
+/*.my-button b {
+  padding-bottom: 0%;
+}
+
+.my-button b:hover {
+  color: red;
+}

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BLACK SPACE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+  
+
+  <style>
+    /* header text, header font and color */
+    body {
+      font-family: 'Merriweather', serif;
+      margin: 0;
+      background-color: #fff;
+      color: #060101f0;
+      text-align: center;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid #ddd; /* separates itself from the header pic */
+      padding: 7px 0;
+    }
+
+    /* Header that separates the TechL!fe logo and subscribe*/
+    /* with flex and justify-content being the main actors */
+    .header .container { 
+      max-width: 1250px; /* the bigger the farther the spaces between the two texts */
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* logo specs */
+    .header .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black; /* BLACK TechL!fe Logo */
+      font-family: serif;
+    }
+
+
+    /* avoids the hero pic to be all over the place (over stretching or overflowing)*/
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    /* the sub head specs (color, margin, font size) */
+    .hero .subhead {
+      font-size: 1rem;
+      color: #725a5a;
+      max-width: 800px; /* the smaller the more it becomes a poet alignment like */
+      margin: 0 auto 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    /* for the subscribe button */
+    /* without this it'll be just a boring link button */
+    .header .nav a {
+      text-decoration: none;
+      color: #d60000;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    /* footer font size and color and height */
+    .footer-note {
+      font-size: 0.8rem;
+      color: #aaa;
+      line-height: 1.5;
+    }
+    body { 
+      margin: 0;
+      padding: 0;
+      font-family: "Baskerville Old Face", "Baskerville", serif;
+      background-color: #000;  /* solid black background */
+      color: #fff;             /* white text */
+      line-height: 1.6;
+    }
+
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .essay {
+      flex: 1;
+      font-size: 1.3rem;
+      text-align:justify;
+    }
+
+    .essay p {
+      margin-bottom: 1.5rem;
+    }
+
+    .image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #000;
+    }
+    .container-custom {
+      width: min(1100px, 94%);
+      margin: 0 auto;
+    }
+    .header-inner {
+      display: flex;  
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0; }
+    .logo-area {
+      margin-bottom: 10px; /* space between logo and nav */
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: rgb(14, 1, 67); /* or white if you have a dark background */
+    }
+    .size {
+      font-size: x-large;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .size b {
+      font-size: small;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .main-nav a {
+      text-decoration: none;
+      color: rgb(14, 1, 67);
+      font-size: 1.2rem;
+      transition: color 0.2s ease;
+    }
+    .main-nav b {
+      font-size: medium;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .main-nav a:hover {
+      color: rgb(114, 0, 0); 
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Top navigation bar -->
+  <div class="container-custom header-inner">
+      <a class="logo size" href="#">O  M  
+        <div class="spinner-border text-dark" role="status">
+      <span class="visually-hidden"></span>
+      </div>  R  I</a>
+      <nav class="main-nav" >
+        <a href="index.html" target="_blank"> <b>  Home  </b> </a>
+        <a href="indexA.html" target="_blank"><b>  Black Space  </b></a>
+        <!-- <a href="#updates"><b> Updates </b></a> -->
+        <a href="indexB.html" target="_blank"><b>  Theme  </b></a> <br>
+      </nav>
+    </div>
+    </header> 
+
+  <!-- Article hero -->
+   <!-- Article hero -->
+  <section class="hero">
+    <img src="images/death.png" alt="Lifestyle Article Hero">
+    <h1 class="headline">BLACK SPACE: THE MEMORIES BURIED WITHIN</h1> 
+    <p class="subhead"> </p>
+  </section> <br> <br>
+
+
+</head>
+
+
+<body> <!-- The simple essay -->
+
+  <div class="container">
+    <div class="essay container-fluid" style="text-align: justify; font-family: Georgia, 'Times New Roman', Times, serif;">
+      <p>
+        &nbsp;&nbsp;&nbsp;
+        Omori is a 2020 role-playing video game developed and published by indie studio Omocat.
+        The player controls a hikikomori teenage boy named Sunny and his dream world alter-ego Omori. 
+        The player explores the real world and Sunny's surreal dream world as Omori, 
+        either overcoming or suppressing his fears and repressed memories. 
+        How Sunny and Omori interact depends on choices made by the player, 
+        resulting in one of several endings. The game's turn-based battle system includes 
+        unconventional status effects based on characters' emotions. Prominently portraying concepts 
+        such as anxiety, depression, psychological trauma, self harm, and suicide, 
+        the game features strong psychological horror elements. As unexpectedly as the plot goes dark, 
+        it is also unexpected how people find comfort and hope to live through this story.
+      </p> <br><br><br>
+      <p class="size">
+        <b>things isn't what it seems...</b>
+      </p>
+    </div>
+
+    <div class="image">
+      <ul>
+        <blockquote><img src="images/Welcome to black space1.jpg" alt="Lifestyle with TECHNOLOGY"></li>
+        <blockquote><img src="images/dark basil.jpg" alt="Lifestyle with TECHNOLOGY"></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-note">
+      COPYRIGHT © 2025  <br>
+      Author: JSINTH
+    </div>
+  </footer>
+
+</body>
+</html>

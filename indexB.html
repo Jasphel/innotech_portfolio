@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>THEME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+  
+
+  <style>
+    /* header text, header font and color */
+    body {
+      font-family: 'Merriweather', serif;
+      margin: 0;
+      background-color: #fff;
+      color: #060101f0;
+      text-align: center;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid #ddd; /* separates itself from the header pic */
+      padding: 7px 0;
+    }
+
+    /* Header that separates the TechL!fe logo and subscribe*/
+    /* with flex and justify-content being the main actors */
+    .header .container { 
+      max-width: 1250px; /* the bigger the farther the spaces between the two texts */
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* logo specs */
+    .header .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: black; /* BLACK TechL!fe Logo */
+      font-family: serif;
+    }
+
+
+    /* avoids the hero pic to be all over the place (over stretching or overflowing)*/
+    .hero img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    /* the sub head specs (color, margin, font size) */
+    .hero .subhead {
+      font-size: 1rem;
+      color: #725a5a;
+      max-width: 800px; /* the smaller the more it becomes a poet alignment like */
+      margin: 0 auto 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    /* for the subscribe button */
+    /* without this it'll be just a boring link button */
+    .header .nav a {
+      text-decoration: none;
+      color: #d60000;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    /* footer font size and color and height */
+    .footer-note {
+      font-size: 0.8rem;
+      color: #aaa;
+      line-height: 1.5;
+    }
+    body { 
+      margin: 0;
+      padding: 0;
+      font-family: "Baskerville Old Face", "Baskerville", serif;
+      background-color: #000;  /* solid black background */
+      color: #fff;             /* white text */
+      line-height: 1.6;
+    }
+
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .essay {
+      flex: 1;
+      font-size: 1.3rem;
+      text-align:justify;
+    }
+
+    .essay p {
+      margin-bottom: 1.5rem;
+    }
+
+    .image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #000;
+    }
+    .container-custom {
+      width: min(1100px, 94%);
+      margin: 0 auto;
+    }
+    .header-inner {
+      display: flex;  
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0; }
+    .logo-area {
+      margin-bottom: 10px; /* space between logo and nav */
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: rgb(14, 1, 67); /* or white if you have a dark background */
+    }
+    .size {
+      font-size: x-large;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .size b {
+      font-size: xx-small;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .main-nav a {
+      text-decoration: none;
+      color: rgb(14, 1, 67);
+      font-size: 1.2rem;
+      transition: color 0.2s ease;
+    }
+    .main-nav b {
+      font-size: medium;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .main-nav a:hover {
+      color: rgb(114, 0, 0); 
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <!-- Top navigation bar -->
+  <div class="container-custom header-inner">
+      <a class="logo size" href="#">O  M  
+        <div class="spinner-border text-dark" role="status">
+      <span class="visually-hidden"></span>
+      </div>  R  I</a>
+      <nav class="main-nav" >
+        <a href="index.html" target="_blank"> <b>  Home  </b> </a>
+        <a href="indexA.html" target="_blank"><b>  Black Space  </b></a>
+        <!-- <a href="#updates"><b> Updates </b></a> -->
+        <a href="indexB.html" target="_blank"><b>  Theme  </b></a> <br>
+      </nav>
+    </div>
+    </header> 
+
+  <!-- Article hero -->
+   <!-- Article hero -->
+  <section class="hero">
+    <img src="images/death.png" alt="Lifestyle Article Hero">
+    <h1 class="headline">BLACK SPACE: THE MEMORIES BURIED WITHIN</h1> 
+    <p class="subhead"> </p>
+  </section> <br> <br>
+
+
+</head>
+
+
+<body> <!-- The simple essay -->
+
+  <div class="container">
+    <div class="essay container-fluid" style="text-align: justify; font-family: Georgia, 'Times New Roman', Times, serif;">
+      <p>
+        &nbsp;&nbsp;&nbsp;
+        Omori in the tippest of its Iceberg looks like a very friendly with a pastle-ish palette of colors, 
+        keeping its facade of love, unity and friendship. That is until their friend Basil has uncovered something
+        making him suddenly disappear. This has led to Omori and his friends: Aubrey, Kel, Hero, and his sister Mari
+        on a journey to find their friend. The journey was long, hard with many sideline quests to the point,...
+        the NPCs (or even you) have forgotten the goal of the journey. As you embark on the journey, you will find strange,
+        enigmas, and even creepy and scary things. Once you have gotten to OMORI's blackspace, you will find out every
+        inch of memory he has buried deep within. The death of his sister that was caused by none other than himself, SUNNY.
+        As you wander in the black space, you will fight the things that you have always feared. The things you have always
+        ran away from. You reach to the point of facing yourself and the YOU, the player, will play as SUNNY (his real self)
+        against the character you have been playing all throughout the game, OMORI.
+        We know things have gotten darker and traumatising at this point but it is also directly proportional to the theme.
+        As you fight OMORI, the very theme that has saved multiple people and the utmost important part of the game will surface.
+        the THEME of <span style="color: yellow;">ACCEPTANCE</span> and <span style="color: palevioletred;">SELF LOVE</span>. 
+        <br><br>
+         &nbsp;&nbsp;&nbsp;
+         The fact that he has to face the fact that he has accidentally killed his sister, MARI,
+         a person who's loved by all, the favorite child, the lover of his friend's brother, and most of all, 
+         His BELOVED SISTER is too much to bear. Even I, as a player, have never once felt the fear of 
+         accidentally killing your beloved and the trauma of the scene and the warmth leaving your sister's body
+         until I played OMORI. The fight between you (SUNNY) and OMORI is excruciating. You don't have in-game
+         items, nor the skills to fight. You are just SUNNY, a frail shut-in, always engulfed in fear and depression.
+         Throughout the fight, OMORI will amke you face the reality and the gravity of the things you have done.
+         He will guilt trip you, slander you, and even tell you to just forget everything, like a cycle. over and Over and 
+         <b>OVER AGAIN</b>. You being in the white space isn't your first time. You have been there as long as you can remember.
+         You have been through this many times. Suffering all over again. You have been burying a resurfacing memory for a long time.
+         You, the player, must break this cycle. And every choice you have made in the headspace will affect the choices
+         SUNNY will make in the real life. 
+      </p> <br><br><br>
+      <p class="size">
+        <b>waiting for something to happen?...</b>
+      </p>
+    </div>
+
+    <div class="image">
+      <ul>
+        <blockquote><img src="images/message2.png" alt="intro 1"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/scatter2.png" alt="photos"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/scsatter1.png" alt="photos 2"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/sunflower.png" alt="Basil and Sunny"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/sunflower2.png" alt="Basil and Sunny 2"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/sunflower3.png" alt="Basil and Sunny 3"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/message.png" alt="intro 2"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/crashout2.jpg" alt="crashing"></li>
+        <br> &nbsp;&nbsp;
+        <blockquote><img src="images/gameover.png" alt="gameover"></li>
+        <br>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="footer-note">
+      COPYRIGHT © 2025  <br>
+      Author: JSINTH
+    </div>
+  </footer>
+
+</body>
+</html>
